@@ -1,2 +1,1 @@
-Test
-OK
+Dev Capstone project
