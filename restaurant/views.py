@@ -6,6 +6,13 @@ from .models import Booking, MenuItem
 from .serializers import BookingSerializer, MenuItemSerializer
 
 # Create your views here.
+def index(request):
+    return render(request, 'index.html', {})
+
+def home(request):
+    return render(request, 'home.html', {})
+
+
 class BookingViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     queryset = Booking.objects.all()
